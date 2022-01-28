@@ -1,0 +1,735 @@
+@font-face {
+    font-family: 'Sohne';
+    src: url('./fonts/Sohne-Buch.woff2') format('woff2'),
+        url('./fonts/Sohne-Buch.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Sohne';
+    src: url('./fonts/Sohne-BuchKursiv.woff2') format('woff2'),
+        url('./fonts/Sohne-BuchKursiv.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Sohne';
+    src: url('./fonts/Sohne-Dreiviertelfett.woff2') format('woff2'),
+        url('./fonts/Sohne-Dreiviertelfett.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Sohne';
+    src: url('./fonts/Sohne-DreiviertelfettKursiv.woff2') format('woff2'),
+        url('./fonts/Sohne-DreiviertelfettKursiv.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Sohne';
+    src: url('./fonts/Sohne-Extrafett.woff2') format('woff2'),
+        url('./fonts/Sohne-Extrafett.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Sohne';
+    src: url('./fonts/Sohne-ExtrafettKursiv.woff2') format('woff2'),
+        url('./fonts/Sohne-ExtrafettKursiv.woff') format('woff');
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Sohne';
+    src: url('./fonts/Sohne-FettKursiv.woff2') format('woff2'),
+        url('./fonts/Sohne-FettKursiv.woff') format('woff');
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Sohne';
+    src: url('./fonts/Sohne-ExtraleichtKursiv.woff2') format('woff2'),
+        url('./fonts/Sohne-ExtraleichtKursiv.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Sohne';
+    src: url('./fonts/Sohne-Extraleicht.woff2') format('woff2'),
+        url('./fonts/Sohne-Extraleicht.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Sohne';
+    src: url('./fonts/Sohne-Fett.woff2') format('woff2'),
+        url('./fonts/Sohne-Fett.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Sohne';
+    src: url('./fonts/Sohne-Kraftig.woff2') format('woff2'),
+        url('./fonts/Sohne-Kraftig.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Sohne';
+    src: url('./fonts/Sohne-HalbfettKursiv.woff2') format('woff2'),
+        url('./fonts/Sohne-HalbfettKursiv.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Sohne';
+    src: url('./fonts/Sohne-Halbfett.woff2') format('woff2'),
+        url('./fonts/Sohne-Halbfett.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Sohne';
+    src: url('./fonts/Sohne-Leicht.woff2') format('woff2'),
+        url('./fonts/Sohne-Leicht.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Sohne';
+    src: url('./fonts/Sohne-KraftigKursiv.woff2') format('woff2'),
+        url('./fonts/Sohne-KraftigKursiv.woff') format('woff');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Sohne';
+    src: url('./fonts/Sohne-LeichtKursiv.woff2') format('woff2'),
+        url('./fonts/Sohne-LeichtKursiv.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Sohne Breit';
+    src: url('./fonts/SohneBreit-Dreiviertelfett.woff2') format('woff2'),
+        url('./fonts/SohneBreit-Dreiviertelfett.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Sohne Breit';
+    src: url('./fonts/SohneBreit-Extrafett.woff2') format('woff2'),
+        url('./fonts/SohneBreit-Extrafett.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Sohne Breit';
+    src: url('./fonts/SohneBreit-Halbfett.woff2') format('woff2'),
+        url('./fonts/SohneBreit-Halbfett.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+:root{
+    --clr-white: #fff;
+    --clr-blue: #0078C1;
+    --clr-yellow-light: #FDF8F2;
+    --clr-dark-blue: #012A38;
+    --clr-font: #231A01;
+    --clr-linkedin: #0477B5;
+}
+
+*,
+:after,
+:before {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+* {
+    -webkit-padding-start: 0px;
+}
+
+html,
+body {
+    height: 100%;
+}
+h1,h2,h3,p{
+    margin: 0;
+    padding: 0;
+}
+
+img{
+    display: block;
+    max-width: 100%;
+}
+
+body{
+    font-family: "Sohne", sans-serif;
+    font-weight: 300;
+    margin: 0;
+    padding: 0;
+    color: var(--clr-font);
+}
+
+.link{
+    color: var(--clr-blue);
+    font-weight: 500;
+    text-decoration: none;
+    border-bottom: 2px solid var(--clr-blue);
+}
+
+.bold{
+    font-weight: 500;
+}
+
+.hide{
+    display: none;
+}
+
+.header{
+    position: fixed;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    padding: 30px 0;
+    z-index: 99999;
+}
+
+@media only screen and (max-width: 991px) {
+    .header {
+        padding: 25px 20px;
+    }
+}
+
+.header .logo-white {
+    display: block;
+}
+
+.header .logo-black {
+    display: none;
+}
+
+.scrolled-header .logo-white {
+    display: none;
+}
+
+.scrolled-header{
+    background: var(--clr-white);
+    box-shadow: 0 5px 30px rgba(0, 0, 0, 0.3);
+}
+
+.scrolled-header .logo-black{
+    display: block;
+}
+
+.scrolled-header .logo-white {
+    display: none;
+}
+
+.header-container{
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+}
+
+.branding{
+    flex: 2;
+}
+
+.navigation{
+    display: flex;
+    flex: 3;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.navigation-list{
+    display: flex;
+    display: none;
+}
+
+.navigation-list li{
+    list-style: none;
+    margin-left: 50px;
+}
+
+
+.navigation-list a{
+    color: var(--clr-white);
+    text-decoration: none;
+    font-weight: 400;
+}
+.scrolled-header .navigation-list a {
+    color: var(--clr-font);
+}
+
+/* herro banner */
+.hero-banner{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    
+    position: relative;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@media only screen and (min-width: 992px) {
+    .hero-banner {
+        height: 100vh;
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    .hero-banner {
+        height: 600px;
+    }
+}
+
+
+@media only screen and (max-width: 480px) {
+    .hero-banner {
+        height: 500px;
+    }
+}
+
+.hero-line{
+    position: absolute;
+    bottom: 0;
+    margin: 0 auto;
+    width: 2px;
+    height: 164px;
+    background: var(--clr-white);
+    z-index: 999;
+}
+
+@media only screen and (max-width: 480px) {
+    .hero-line {
+        height: 70px;
+    }
+}
+
+
+.hero-container{
+    max-width: 810px;
+}
+
+@media only screen and (max-width: 991px) {
+    .hero-container {
+        padding: 0 20px;;
+    }
+}
+
+.hero-tint{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 99;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.hero-h1{
+    position: relative;
+    z-index: 999;
+    font-size: 74px;
+    color: var(--clr-white);
+    font-family: "Sohne Breit",sans-serif;
+    line-height: 1.2;
+    text-align: center;
+}
+
+@media only screen and (max-width: 991px) {
+    .hero-h1 {
+        font-size: 44px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .hero-h1 {
+        font-size: 40px;
+    }
+}
+
+/* global section */
+.about-section,
+.advantage-section,
+.team-section {
+    padding: 90px 0;
+}
+@media only screen and (max-width: 991px) {
+    .about-section,
+    .advantage-section,
+    .team-section {
+        padding: 15px 0;
+    }
+}
+
+.container {
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+@media only screen and (min-width: 1280px) {
+    .container {
+        max-width: 1200px;
+        padding: 0;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .container {
+        display: flex;
+    }
+}
+
+
+
+/* aheadings */
+.headings {
+    margin-bottom: 40px;
+}
+
+.headings h2 {
+    font-size: 26px;
+    font-family: "Sohne Breit", sans-serif;
+    margin-top: 20px;
+}
+
+@media only screen and (min-width: 700px) {
+    .headings h2{
+        font-size: 40px;
+    }
+}
+
+
+.headings p{
+    font-size: 20px;
+    margin-top: 5px;
+}
+
+/* about section */
+.about-content h2{
+    margin-bottom: 20px;
+}
+
+@media only screen and (min-width: 700px) {
+    .about-content {
+        flex: 2;
+    }
+}
+
+@media only screen and (min-width: 1100px) {
+    .about-content .about-text{
+        max-width: 80%;
+    }
+}
+
+.about-content h2{
+    font-size: 30px;
+    font-family: "Sohne Breit", sans-serif;
+    margin-bottom: 5px;
+    margin-top: 20px;
+}
+
+@media only screen and (min-width: 992px) {
+    .about-content h2 {
+        margin-bottom: 20px;
+    }
+}
+
+.about-content p{
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
+@media only screen and (min-width: 992px) {
+    .about-image{
+        flex: 1;
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    .about-image {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 30px;
+    }
+}
+
+/* our advantage */
+.advantage-section {
+    background: var(--clr-yellow-light)
+}
+.advantage-section .container {
+    display: block;
+}
+.advantage-headings{
+    margin-bottom: 40px;
+}
+.advantage-list{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 30px;
+}
+
+@media only screen and (max-width: 991px) {
+    .advantage-list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .advantage-list {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+.advantage-item{
+    margin-bottom: 30px;
+}
+.advantage-icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--clr-dark-blue);
+    height: 207px;
+    border-radius: 10px;
+}
+
+.advantage-h3{
+    font-family: "Sohne Breit", sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 3px;
+}
+
+.advantage-p{
+    max-width: 80%;
+    font-size: 15px;
+    line-height: 1.3;
+}
+
+/* team */
+.team-section .container{
+    display: block;
+}
+
+.team-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 70px;
+}
+
+@media only screen and (max-width: 991px) {
+    .team-list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .team-list {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+
+.team-image img{
+    display: block;
+    width: 100%;
+    object-fit: cover;
+}
+
+.team-h4{
+    font-size: 20px;
+    font-family: "Sohne Breit", sans-serif;
+    margin-top: 12px;
+    margin-bottom: 0;
+}
+
+.team-h5{
+    font-size: 16px;
+    font-weight: 300;
+    margin: 5px 0 40px;
+    opacity: 0.7;
+}
+
+.team-dec {
+    position: relative;
+}
+
+.linkedin a{
+    position: absolute;
+    top: 10px;
+    right: 0;
+    display: block;
+    width: 30px;
+    height: 30px;
+    border-radius: 4px;
+    background-color: var(--clr-linkedin);
+    background-image: url(../images/icons/linkedin.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/* contact us */
+.contact{
+    width: 100%;
+    height: 800px;
+    background-color: #012A38;
+    background-image: url(../images/contact_bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@media only screen and (max-width: 991px) {
+    .contact {
+        height: auto;
+    }
+}
+
+
+.contact .headings {
+    font-size: 25px;
+    font-family: "Sohne Breit", sans-serif;
+    margin-bottom: 20px;
+    text-align: center;
+    color: var(--clr-white);
+}
+
+.contact .container {
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+}
+
+@media only screen and (max-width: 991px) {
+    .contact .container {
+        display: flex;
+    }
+    .contact-content{
+        width: 100%;
+        padding: 20px 0 40px;
+    }
+}
+
+.contact-boxy{
+    width: 800px;
+    background: #99DBCF;
+    padding: 40px 40px;
+    border-radius: 10px;
+}
+
+
+@media only screen and (max-width: 991px) {
+    .contact-boxy {
+        padding: 30px;
+        width: 100%;
+    }
+}
+
+.contact-boxy .grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 20px;
+}
+
+@media only screen and (max-width: 991px) {
+    .contact-boxy .grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+.form-control{
+    width: 100%;
+    height: 55px;
+    padding: 20px;
+    border: 1px solid #7E8691;
+    border-radius: 10px;
+    background: transparent;
+    outline: none;
+    margin-bottom: 20px;
+
+}
+
+.textarea{
+    height: 193px !important;
+    resize: none;
+}
+
+.label{
+    display: block;
+    font-size: 14px;
+    margin-bottom: 8px;
+    font-weight: 400;
+    color: #343D48;
+}
+
+.btn{
+    width: 100%;
+    height: 60px;
+    background: var(--clr-dark-blue);
+    color: var(--clr-white);
+    font-size: 16px;
+    font-family: "Sohne Breit", sans-serif;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+/* footer */
+.footer{
+    padding: 30px 0;
+    text-align: center;
+    text-align: center;
+}
+.footer .container{
+    display: block;
+}

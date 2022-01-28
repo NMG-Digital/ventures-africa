@@ -1,0 +1,23 @@
+<svg id="icons8-handshake" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="103.537" height="91.211" viewBox="0 0 103.537 91.211">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.136" y1="0.017" x2="0.803" y2="0.799" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#ffcf54"/>
+      <stop offset="0.261" stop-color="#fdcb4d"/>
+      <stop offset="0.639" stop-color="#f7c13a"/>
+      <stop offset="1" stop-color="#f0b421"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="0.79" y1="0.173" x2="0.02" y2="1.12" gradientUnits="objectBoundingBox">
+      <stop offset="0.488" stop-color="#c16e14"/>
+      <stop offset="0.511" stop-color="#ba6a13"/>
+      <stop offset="0.745" stop-color="#744109"/>
+      <stop offset="0.914" stop-color="#492802"/>
+      <stop offset="1" stop-color="#381e00"/>
+    </linearGradient>
+  </defs>
+  <path id="Path_92" data-name="Path 92" d="M89.234,53.452l1.186-.895-36.785-33.4L64.629,9H3V53.373L39.829,90.035a8.6,8.6,0,0,0,14.939-5.847c0-.049-.015-.094-.015-.143A9.755,9.755,0,0,0,59.7,85.42a9.859,9.859,0,0,0,9.641-7.812,9.761,9.761,0,0,0,2.685.417,9.861,9.861,0,0,0,9.861-9.861c0-.042-.012-.084-.012-.126a8.6,8.6,0,0,0,7.361-14.586Z" transform="translate(-3 -1.605)" fill="url(#linear-gradient)"/>
+  <circle id="Ellipse_14" data-name="Ellipse 14" cx="9.535" cy="9.535" r="9.535" transform="translate(57.219)" fill="#c16e14"/>
+  <g id="Group_26" data-name="Group 26" transform="translate(17.256 0.954)">
+    <path id="Path_93" data-name="Path 93" d="M55.343,12.828,39.808,6.387l-8.87.431L26.723,8.961l-.56,19.9S50.738,53.085,54.7,56.686a9.815,9.815,0,0,1,3.111,6.4,9.8,9.8,0,0,1-.094,1.511H72.6V12.828Z" transform="translate(13.681 -6.387)" fill="url(#linear-gradient-2)"/>
+    <path id="Path_94" data-name="Path 94" d="M10,28.676a10.9,10.9,0,0,0,10.9,10.9,10.744,10.744,0,0,0,3.284-.56l27.129-10.7L54.227,6.64Z" transform="translate(-10 -6.016)" fill="#c16e14"/>
+  </g>
+</svg>
