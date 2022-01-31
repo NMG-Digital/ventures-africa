@@ -171,6 +171,7 @@
 :root{
     --clr-white: #fff;
     --clr-blue: #0078C1;
+    --clr-light-blue: #99DBCF;
     --clr-yellow-light: #FDF8F2;
     --clr-dark-blue: #012A38;
     --clr-font: #231A01;
@@ -247,6 +248,16 @@ body{
 .header .logo-black {
     display: none;
 }
+@media only screen and (max-width: 991px) {
+    .logo-white,
+    .logo-black {
+        width: 230px;
+    }
+}
+
+.header .line-menu{
+    background: var(--clr-white);
+}
 
 .scrolled-header .logo-white {
     display: none;
@@ -263,6 +274,10 @@ body{
 
 .scrolled-header .logo-white {
     display: none;
+}
+
+.scrolled-header .line-menu {
+    background: var(--clr-font);
 }
 
 .header-container{
@@ -284,7 +299,6 @@ body{
 
 .navigation-list{
     display: flex;
-    display: none;
 }
 
 .navigation-list li{
@@ -298,8 +312,101 @@ body{
     text-decoration: none;
     font-weight: 400;
 }
+.navigation-list a.active {
+    color: var(--clr-light-blue) !important;
+}
 .scrolled-header .navigation-list a {
     color: var(--clr-font);
+}
+
+
+/* mobile menu */
+#content_overlay {
+    position: fixed;
+    z-index: 8000;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.9);
+    display: none;
+}
+.menu-open #content_overlay {
+    display: block;
+}
+
+@media only screen and (max-width: 991px){ 
+    .menu-open .navigation {
+        display: flex;
+    }
+
+    .navigation {
+        position: fixed;
+        z-index: 99999;
+        height: 100vh;
+        width: 100vw;
+        align-items: center;
+        justify-content: center;
+        display: none;
+    }
+
+    .navigation-list {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .navigation-list li {
+        margin-left: 0;
+    }
+
+    .navigation-list a {
+        display: block;
+        color: var(--clr-white) !important;
+        padding: 15px 0;
+        font-size: 25px;
+    }
+
+    .hamburger-menu {
+        position: fixed;
+        right: 18px;
+        top: 28px;
+        width: 42px;
+        height: 36px;
+        padding: 0 7px;
+        cursor: pointer;
+        z-index: 999999;
+        border: 1px solid var(--clr-white);
+        border-radius: 5px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .line-menu {
+        display: inline-block;
+        width: 26px;
+        height: 2px;
+        border-radius: 0;
+        display: block;
+        position: relative;
+        margin-top: 4px;
+    }
+    .line-menu:first-child {
+        margin-top: 0;
+    }
+
+    .scrolled-header .hamburger-menu {
+        border-color: var(--clr-font);
+    }
+
+    .menu-open .hamburger-menu {
+        border-color: var(--clr-white);
+    }
+
+    .menu-open .line-menu {
+        background: var(--clr-white);
+    }
 }
 
 /* herro banner */
@@ -308,7 +415,6 @@ body{
     align-items: center;
     justify-content: center;
     width: 100%;
-    
     position: relative;
     background-position: center;
     background-repeat: no-repeat;
