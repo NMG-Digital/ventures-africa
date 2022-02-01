@@ -24,7 +24,7 @@
     <meta name="twitter:site" content="">
     <meta name="twitter:title" content="N2 Ventures Africa builds, partners and invests in African start-ups, creating a transformative content ecosystem.">
     <meta name="twitter:description" content="N2 Ventures Africa builds, partners and invests in African start-ups, creating a transformative content ecosystem.">
-    <meta name="twitter:creator" content="">
+    <meta name="twitter:creator" content="Nation Media Group">
     <meta name="twitter:data1" content="N2 Ventures Africa builds, partners and invests in African start-ups, creating a transformative content ecosystem.">
     <meta name="twitter:label1" content="author">
     <meta name="twitter:data2" content="N2 Ventures Africa builds, partners and invests in African start-ups, creating a transformative content ecosystem.">
@@ -113,7 +113,7 @@
                 <div class="about-content">
                     <div class="about-text">
                         <h2>About us</h2>
-                        <p>For six decades, <a href="#!" class="link">Nation Media Group</a> has run East Africa’s best-known newspapers and TV stations. Then it retooled as a modern content company. There are great opportunities in digital content, meaning anything that informs, educates or entertains</p>
+                        <p>For six decades, <a href="https://www.nationmedia.com" target="_blank" class="link">Nation Media Group</a> has run East Africa’s best-known newspapers and TV stations. Then it retooled as a modern content company. There are great opportunities in digital content, meaning anything that informs, educates or entertains</p>
                         <p>To capture the opportunities, N2 Ventures Africa was created as a self-standing venture arm of Nation Media. N2 builds, partners and invests in African start-ups, creating a transformative content ecosystem</p>
                         <p><em class="bold">Every day we reach millions of people and deploy incredible human talent to support new products. We are inventing the future of digital content in Africa</em></p>
                     </div>
@@ -132,42 +132,42 @@
                 <div class="advantage-list">
                     <div class="advantage-item">
                         <div class="advantage-icon">
-                            <img src="images/icons/vast_reach.svg" alt="" />
+                            <img src="images/icons/vast_reach.svg" alt="Vast reach" />
                         </div>
                         <h3 class="advantage-h3">Vast reach</h3>
                         <p class="advantage-p">Low cost of acquiring customers (we reach millions every day)</p>
                     </div>
                     <div class="advantage-item">
                         <div class="advantage-icon">
-                            <img src="images/icons/human_capital.svg" alt="" />
+                            <img src="images/icons/human_capital.svg" alt="Human capital" />
                         </div>
                         <h3 class="advantage-h3">Human capital</h3>
                         <p class="advantage-p">Product managers, marketers, developers, etc helping entrepreneurs</p>
                     </div>
                     <div class="advantage-item">
                         <div class="advantage-icon">
-                            <img src="images/icons/financial_capital.svg" alt="" />
+                            <img src="images/icons/financial_capital.svg" alt="Financial capital" />
                         </div>
                         <h3 class="advantage-h3">Financial capital</h3>
                         <p class="advantage-p">Please look up Nation Media’s balance sheet (it’s public)</p>
                     </div>
                     <div class="advantage-item">
                         <div class="advantage-icon">
-                            <img src="images/icons/africa.svg" alt="" />
+                            <img src="images/icons/africa.svg" alt="Africa" />
                         </div>
                         <h3 class="advantage-h3">Africa</h3>
                         <p class="advantage-p">Wide brand recognition and a continental network of contacts & advisers</p>
                     </div>
                     <div class="advantage-item">
                         <div class="advantage-icon">
-                            <img src="images/icons/relationships.svg" alt="" />
+                            <img src="images/icons/relationships.svg" alt="Relationships" />
                         </div>
                         <h3 class="advantage-h3">Relationships</h3>
                         <p class="advantage-p">With many corporates who will be advertisers and customers</p>
                     </div>
                     <div class="advantage-item">
                         <div class="advantage-icon">
-                            <img src="images/icons/network_effects.svg" alt="" />
+                            <img src="images/icons/network_effects.svg" alt="Network effects" />
                         </div>
                         <h3 class="advantage-h3">Network effects</h3>
                         <p class="advantage-p">Being part of a portfolio of companies adds extra value</p>
@@ -275,10 +275,10 @@
                     <div class="headings">
                         <h2>Contact us</h2>
                     </div>
-                    <form class="contact-boxy" method="post">
+                    <form class="contact-boxy" method="post" autocomplete="off">
                         <div class="grid">
                             <div class="input-container">
-                                <label class="label">Full names</label>
+                                <label class="label">Name</label>
                                 <input type="text" name="Name" id="Name" class="form-control" required />
                             </div>
                             <div class="input-container">
@@ -314,7 +314,7 @@
           form.onsubmit = e => {
             e.preventDefault();
     
-            // Grab form data based on IDs
+            // Grab form data based on field IDs
             let data = {};
             Array.from(form).map(input => (data[input.id] = input.value));
             console.log('Sending: ', JSON.stringify(data));
