@@ -224,23 +224,25 @@
                     <div class="headings">
                         <h2>Contact us</h2>
                     </div>
-                    <form class="contact-boxy">
+                    <form class="contact-boxy" method="post">
                         <div class="grid">
                             <div class="input-container">
                                 <label class="label">Full names</label>
-                                <input type="text" class="form-control" />
+                                <input type="text" name="Name" id="Name" class="form-control" required />
                             </div>
                             <div class="input-container">
                                 <label class="label">Email</label>
-                                <input type="text" class="form-control" />
+                                <input type="email" name="Email" id="Email" class="form-control" required />
                             </div>
                         </div>
                         <div class="input-container">
                             <label class="label">Message</label>
-                            <textarea class="form-control textarea"></textarea>
+                            <textarea name="Message" id="Message" class="form-control textarea" required></textarea>
                         </div>
-                        <button class="btn">SUBMIT</button>
+                        <button class="btn" type="submit">SUBMIT</button>
+                        <div id="response" class="successMsg"></div>
                     </form>
+                    
                 </div>
             </div>
         </section>
@@ -251,5 +253,45 @@
         </div>
     </footer>
     <script src="js/build.js"></script>
+    <script>
+        (() => {
+          const form = document.querySelector('form');
+          const submitResponse = document.querySelector('#response');
+          const formURL = 'https://rtjrxaqec9.execute-api.us-east-1.amazonaws.com/Prod/submitForm';
+    
+          form.onsubmit = e => {
+            e.preventDefault();
+    
+            // Grab form data based on IDs
+            let data = {};
+            Array.from(form).map(input => (data[input.id] = input.value));
+            console.log('Sending: ', JSON.stringify(data));
+            submitResponse.innerHTML = 'Sending...'
+    
+            // AJAX request for generating the Lambda payload
+            var xhr = new XMLHttpRequest();
+            xhr.open(form.method, formURL, true);
+            xhr.setRequestHeader('Accept', 'application/json; charset=utf-8');
+            xhr.setRequestHeader('Content-Type', 'application/json; charset=UTF-8');
+    
+            // Send the collected data as JSON
+            xhr.send(JSON.stringify(data));
+            xhr.onloadend = response => {
+              if (response.target.status === 200) {
+                form.reset();
+                submitResponse.innerHTML = 'Form submitted. Success!';
+              } else {
+                submitResponse.innerHTML = 'Error! Please try again.';
+                console.error(JSON.parse(response));
+              }
+            };    
+          };
+        })();
+      </script>
+        <!-- Lambda Function Serverless -->
+        <!-- jQuery first, then Popper.js, then Bootstrap.js -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </body>
 </html>
