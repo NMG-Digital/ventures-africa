@@ -333,8 +333,11 @@
               if (response.target.status === 200) {
                 form.reset();
                 submitResponse.innerHTML = 'Form submitted successfully!';
+                submitBtn.innerHTML = 'SUBMIT'
+                
               } else {
                 submitResponse.innerHTML = 'Error! Please try again.';
+                submitBtn.innerHTML = 'SUBMIT'
                 console.error(JSON.parse(response));
               }
             };    
