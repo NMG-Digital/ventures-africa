@@ -290,7 +290,7 @@
                             <label class="label">Message</label>
                             <textarea name="Message" id="Message" class="form-control textarea" required></textarea>
                         </div>
-                        <button class="btn" type="submit">SUBMIT</button>
+                        <button class="btn" id="submitBtn" type="submit">SUBMIT</button>
                         <div id="response" class="successMsg"></div>
                     </form>
                     
@@ -308,6 +308,7 @@
         (() => {
           const form = document.querySelector('form');
           const submitResponse = document.querySelector('#response');
+          const submitBtn = document.querySelector('#submitBtn');
           const formURL = 'https://rtjrxaqec9.execute-api.us-east-1.amazonaws.com/Prod/submitForm';
     
           form.onsubmit = e => {
@@ -318,6 +319,7 @@
             Array.from(form).map(input => (data[input.id] = input.value));
             console.log('Sending: ', JSON.stringify(data));
             submitResponse.innerHTML = 'Sending...'
+            submitBtn = 'PROCESSING'
     
             // AJAX request for generating the Lambda payload
             var xhr = new XMLHttpRequest();
@@ -330,7 +332,7 @@
             xhr.onloadend = response => {
               if (response.target.status === 200) {
                 form.reset();
-                submitResponse.innerHTML = 'Fsorm submitted. Success!';
+                submitResponse.innerHTML = 'Form submitted successfully!';
               } else {
                 submitResponse.innerHTML = 'Error! Please try again.';
                 console.error(JSON.parse(response));
