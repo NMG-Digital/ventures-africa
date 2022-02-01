@@ -319,7 +319,7 @@
             Array.from(form).map(input => (data[input.id] = input.value));
             console.log('Sending: ', JSON.stringify(data));
             submitResponse.innerHTML = 'Sending...'
-            submitBtn = 'PROCESSING'
+            submitBtn.innerHTML = 'PROCESSING'
     
             // AJAX request for generating the Lambda payload
             var xhr = new XMLHttpRequest();
