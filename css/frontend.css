@@ -721,6 +721,22 @@ body{
     background-position: center;
 }
 
+/* video */
+.video-content .video-js{
+    width: 100%;
+    height: 100%;
+}
+
+.video-section{
+    margin-bottom: 20px;
+}
+
+@media only screen and (min-width: 992px) {
+    .video-section {
+        margin-bottom: 60px;
+    }
+}
+
 /* contact us */
 .contact{
     width: 100%;
